@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My home page</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-image: linear-gradient(145deg, red, yellow, pink);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Banking Management System</h2>
+    </center>
+    <form method="" action="">
+        <h3 style="text-decoration:underline;">Login Page</h3>
+        <p>
+            <label>Username : <input type="text" /></label>
+        </p>
+        <p>
+            <label>Password : <input type="password" /></label>
+        </p>
+        <p>
+            <button type="submit"
+                onclick="document.getElementByID('demo').innerHTML='Successfully Submitted'">Submit</button>
+
+        </p>
+        <p style="z-index:10;" id="demo">
+        </p>
+    </form>
+</body>
+
+</html>
